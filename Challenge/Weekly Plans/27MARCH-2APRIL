@@ -3,3 +3,5 @@
 - Explore TI’s DSP kits and decide the model which will be used.
 - After deciding the model, download its datasheet and look over it.
 - Write some basic codes on CCS for exercise.
+- Read the following article:
+Wang,  J.,  Li, Y.,  &  Han,  Y.  (2013).  Evaluation  and  design  for  an  integrated modular  motor drive  (IMMD)  with  GaN devices.  2013  IEEE  Energy Conversion  Congress  and  Exposition,  ECCE  2013,  (Immd), 4318–4325. http://doi.org/10.1109/ECCE.2014.6647278 
