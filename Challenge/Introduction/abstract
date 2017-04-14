@@ -1,0 +1,27 @@
+I downloaded controlsuite and implement this example on DSP.
+In this example there are three modes such as using DATA registers to toggle I/O's, using SET/CLEAR registers to toggle I/O's and using TOGGLE registers to toggle I/O's.
+After running the system and seeing the results, i wrote some additional codes to mode1 like this:
+"       ((GPIO_Obj *)myGpio)->GPADAT = 0x0;
+        ((GPIO_Obj *)myGpio)->GPADAT = 0x1;
+        ((GPIO_Obj *)myGpio)->GPADAT = 2;
+        ((GPIO_Obj *)myGpio)->GPADAT = 3;
+        ((GPIO_Obj *)myGpio)->GPADAT = 4;
+        ((GPIO_Obj *)myGpio)->GPADAT = 5;
+        ((GPIO_Obj *)myGpio)->GPADAT = 6;
+        ((GPIO_Obj *)myGpio)->GPADAT = 7;
+        ((GPIO_Obj *)myGpio)->GPADAT = 8;
+        ((GPIO_Obj *)myGpio)->GPADAT = 9;
+        ((GPIO_Obj *)myGpio)->GPADAT = 0xA;
+        ((GPIO_Obj *)myGpio)->GPADAT = 0xB;
+        ((GPIO_Obj *)myGpio)->GPADAT = 0xC;
+        ((GPIO_Obj *)myGpio)->GPADAT = 0xD;
+        ((GPIO_Obj *)myGpio)->GPADAT = 0xE;
+        ((GPIO_Obj *)myGpio)->GPADAT = 0xF;
+        ((GPIO_Obj *)myGpio)->GPADAT = 0xF1;
+        ((GPIO_Obj *)myGpio)->GPADAT = 0xF2;
+        ((GPIO_Obj *)myGpio)->GPADAT = 0xAAAAAAAA;
+        ((GPIO_Obj *)myGpio)->GPBDAT = 0x0000000A;
+        ((GPIO_Obj *)myGpio)->GPBDAT = 0x00000005; "
+I implemented the codes on DSP and ran it step by step.
+In each step, LEDs of DSP gave the binary equivalent of input and they worked successfully.
+By applying this example, i learned some basics of Code Composer Studio, writing some codes and implementing on DSP.
